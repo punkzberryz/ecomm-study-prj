@@ -45,4 +45,4 @@ const ApiAlert = ({ description, title, variant }: ApiAlertProps) => {
   );
 };
 
-export default ApiAlert;
+export { ApiAlert };

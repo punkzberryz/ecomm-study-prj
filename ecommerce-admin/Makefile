@@ -25,3 +25,7 @@ dropdb:
 cleardb:
 	pnpm prisma migrate reset
 	pnpm prisma db push
+
+migrate:
+	pnpm prisma generate
+	pnpm prisma db push

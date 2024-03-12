@@ -45,4 +45,4 @@ const AlertModal: FC<AlertModalProps> = ({
   );
 };
 
-export default AlertModal;
+export { AlertModal };
