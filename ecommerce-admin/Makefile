@@ -29,3 +29,6 @@ cleardb:
 migrate:
 	pnpm prisma generate
 	pnpm prisma db push
+
+stripe-listen:
+	stripe listen --forward-to localhost:3000/api/webhook
