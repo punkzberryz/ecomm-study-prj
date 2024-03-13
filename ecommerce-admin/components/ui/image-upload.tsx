@@ -32,11 +32,13 @@ const ImageUpload = ({
   const onUpload = (result: CloudinaryUploadWidgetResults) => {
     // console.log("on upload result:");
     // console.log(result);
+
     const { info } = result;
     if (!info || typeof info === "string") {
       toast.error("An error occurred while uploading the image.");
       return;
     }
+
     onChange(info.secure_url);
   };
 
@@ -66,7 +68,7 @@ const ImageUpload = ({
           </div>
         ))}
       </div>
-      <CldUploadWidget onSuccess={onUpload} uploadPreset="bjmvajjc">
+      <CldUploadWidget onUpload={onUpload} uploadPreset="bjmvajjc">
         {({ open }) => {
           const onClick = () => {
             open();

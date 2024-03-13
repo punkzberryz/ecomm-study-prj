@@ -14,4 +14,4 @@ const Heading: FC<HeadingProps> = ({ description, title }) => {
   );
 };
 
-export default Heading;
+export { Heading };
